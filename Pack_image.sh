@@ -28,7 +28,7 @@ build() {
             echo "Docker服务未运行，因此跳过编译docker镜像~"
         fi
     else
-        echo "GOOS版本未识别~"
+        echo "GOOS版本为：${GOOS}，不是linux，跳过封装docker image"
     fi
 
 }
